@@ -5,8 +5,8 @@
     <classes>
       <class name="com.qa.qatask.testCASES.DashboardTest">
         <methods>
-          <include name="verifyPortal"/>
           <include name="setUp"/>
+          <include name="verifyIsSortedByPrice"/>
         </methods>
       </class> <!-- com.qa.qatask.testCASES.DashboardTest -->
     </classes>

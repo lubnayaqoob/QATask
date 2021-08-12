@@ -9,13 +9,26 @@
 <table>
 <tr><th>Test</th><th># Passed</th><th># Skipped</th><th># Retried</th><th># Failed</th><th>Time (ms)</th><th>Included Groups</th><th>Excluded Groups</th></tr>
 <tr><th colspan="8">Surefire suite</th></tr>
-<tr><td><a href="#t0">Surefire test</a></td><td class="num">4</td><td class="num">0</td><td class="num">0</td><td class="num">0</td><td class="num">15,430</td><td></td><td></td></tr>
+<tr><td><a href="#t0">Surefire test</a></td><td class="num">9</td><td class="num">0</td><td class="num">0</td><td class="num attn">1</td><td class="num">24,747</td><td></td><td></td></tr>
 </table>
-<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Surefire suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">Surefire test &#8212; passed</th></tr><tr class="passedeven"><td rowspan="4">com.qa.qatask.testCASES.DashboardTest</td><td><a href="#m0">verifyPortal</a></td><td rowspan="1">1628685241267</td><td rowspan="1">2635</td></tr><tr class="passedeven"><td><a href="#m1">verifySearch</a></td><td rowspan="1">1628685245043</td><td rowspan="1">80</td></tr><tr class="passedeven"><td><a href="#m2">verifyTitle</a></td><td rowspan="1">1628685243921</td><td rowspan="1">17</td></tr><tr class="passedeven"><td><a href="#m3">verifyacceptCookies</a></td><td rowspan="1">1628685243943</td><td rowspan="1">1096</td></tr></tbody>
+<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Surefire suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">Surefire test &#8212; failed</th></tr><tr class="failedeven"><td rowspan="1">com.qa.qatask.testCASES.DashboardTest</td><td><a href="#m0">verifyIsSortedByPrice</a></td><td rowspan="1">1628775558061</td><td rowspan="1">44</td></tr><tr><th colspan="4">Surefire test &#8212; passed</th></tr><tr class="passedeven"><td rowspan="9">com.qa.qatask.testCASES.DashboardTest</td><td><a href="#m1">verifclearFilter</a></td><td rowspan="1">1628775552042</td><td rowspan="1">5343</td></tr><tr class="passedeven"><td><a href="#m2">verifselectWomenShoes</a></td><td rowspan="1">1628775548672</td><td rowspan="1">3362</td></tr><tr class="passedeven"><td><a href="#m3">verifsorByPrice</a></td><td rowspan="1">1628775557389</td><td rowspan="1">668</td></tr><tr class="passedeven"><td><a href="#m4">verifyNikeTextPresent</a></td><td rowspan="1">1628775548095</td><td rowspan="1">575</td></tr><tr class="passedeven"><td><a href="#m5">verifySearch</a></td><td rowspan="1">1628775544858</td><td rowspan="1">144</td></tr><tr class="passedeven"><td><a href="#m6">verifyTitle</a></td><td rowspan="1">1628775544334</td><td rowspan="1">9</td></tr><tr class="passedeven"><td><a href="#m7">verifyacceptCookies</a></td><td rowspan="1">1628775544347</td><td rowspan="1">506</td></tr><tr class="passedeven"><td><a href="#m8">verifyclickNike</a></td><td rowspan="1">1628775545005</td><td rowspan="1">3088</td></tr><tr class="passedeven"><td><a href="#m9">verifycloseportal</a></td><td rowspan="1">1628775543662</td><td rowspan="1">655</td></tr></tbody>
 </table>
-<h2>Surefire test</h2><h3 id="m0">com.qa.qatask.testCASES.DashboardTest#verifyPortal</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m1">com.qa.qatask.testCASES.DashboardTest#verifySearch</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m2">com.qa.qatask.testCASES.DashboardTest#verifyTitle</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m3">com.qa.qatask.testCASES.DashboardTest#verifyacceptCookies</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h2>Surefire test</h2><h3 id="m0">com.qa.qatask.testCASES.DashboardTest#verifyIsSortedByPrice</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.NumberFormatException: For input string: &quot;£5.00&quot;
+	at java.base/java.lang.NumberFormatException.forInputString(NumberFormatException.java:67)
+	at java.base/java.lang.Integer.parseInt(Integer.java:660)
+	at java.base/java.lang.Integer.parseInt(Integer.java:778)
+	at com.qa.qatask.pages.Dashboard.isSortedByPrice(Dashboard.java:141)
+	at com.qa.qatask.testCASES.DashboardTest.verifyIsSortedByPrice(DashboardTest.java:103)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 32 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m1">com.qa.qatask.testCASES.DashboardTest#verifclearFilter</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m2">com.qa.qatask.testCASES.DashboardTest#verifselectWomenShoes</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m3">com.qa.qatask.testCASES.DashboardTest#verifsorByPrice</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m4">com.qa.qatask.testCASES.DashboardTest#verifyNikeTextPresent</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m5">com.qa.qatask.testCASES.DashboardTest#verifySearch</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m6">com.qa.qatask.testCASES.DashboardTest#verifyTitle</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m7">com.qa.qatask.testCASES.DashboardTest#verifyacceptCookies</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m8">com.qa.qatask.testCASES.DashboardTest#verifyclickNike</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m9">com.qa.qatask.testCASES.DashboardTest#verifycloseportal</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
 </body>
 </html>

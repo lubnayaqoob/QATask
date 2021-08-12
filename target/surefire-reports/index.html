@@ -26,7 +26,7 @@
       <span class="top-banner-title-font">Test results</span>
       <button id="button" class="button">Switch Retro Theme</button> <!-- button -->
       <br/>
-      <span class="top-banner-font-1">1 suite</span>
+      <span class="top-banner-font-1">1 suite, 1 failed test</span>
     </div> <!-- top-banner-root -->
     <div class="navigator-root">
       <div class="navigator-suite-header">
@@ -40,7 +40,7 @@
         <div class="rounded-window">
           <div class="suite-header light-rounded-window-top">
             <a href="#" panel-name="suite-Surefire_suite" class="navigator-link">
-              <span class="suite-name border-passed">Surefire suite</span>
+              <span class="suite-name border-failed">Surefire suite</span>
             </a> <!-- navigator-link -->
           </div> <!-- suite-header light-rounded-window-top -->
           <div class="navigator-suite-content">
@@ -93,7 +93,21 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">4 methods,   4 passed</span>
+                    <span class="method-stats">10 methods, 1 failed,   9 passed</span>
+                  </li>
+                  <li>
+                    <span class="method-list-title failed">Failed methods</span>
+                    <span class="show-or-hide-methods failed">
+                      <a href="#" panel-name="suite-Surefire_suite" class="hide-methods failed suite-Surefire_suite"> (hide)</a> <!-- hide-methods failed suite-Surefire_suite -->
+                      <a href="#" panel-name="suite-Surefire_suite" class="show-methods failed suite-Surefire_suite"> (show)</a> <!-- show-methods failed suite-Surefire_suite -->
+                    </span>
+                    <div class="method-list-content failed suite-Surefire_suite">
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Surefire_suite" title="com.qa.qatask.testCASES.DashboardTest" class="method navigator-link" hash-for-method="verifyIsSortedByPrice">verifyIsSortedByPrice</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content failed suite-Surefire_suite -->
                   </li>
                   <li>
                     <span class="method-list-title passed">Passed methods</span>
@@ -104,7 +118,22 @@
                     <div class="method-list-content passed suite-Surefire_suite">
                       <span>
                         <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Surefire_suite" title="com.qa.qatask.testCASES.DashboardTest" class="method navigator-link" hash-for-method="verifyPortal">verifyPortal</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-Surefire_suite" title="com.qa.qatask.testCASES.DashboardTest" class="method navigator-link" hash-for-method="verifclearFilter">verifclearFilter</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Surefire_suite" title="com.qa.qatask.testCASES.DashboardTest" class="method navigator-link" hash-for-method="verifselectWomenShoes">verifselectWomenShoes</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Surefire_suite" title="com.qa.qatask.testCASES.DashboardTest" class="method navigator-link" hash-for-method="verifsorByPrice">verifsorByPrice</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Surefire_suite" title="com.qa.qatask.testCASES.DashboardTest" class="method navigator-link" hash-for-method="verifyNikeTextPresent">verifyNikeTextPresent</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
@@ -122,6 +151,16 @@
                         <a href="#" panel-name="suite-Surefire_suite" title="com.qa.qatask.testCASES.DashboardTest" class="method navigator-link" hash-for-method="verifyacceptCookies">verifyacceptCookies</a> <!-- method navigator-link -->
                       </span>
                       <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Surefire_suite" title="com.qa.qatask.testCASES.DashboardTest" class="method navigator-link" hash-for-method="verifyclickNike">verifyclickNike</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Surefire_suite" title="com.qa.qatask.testCASES.DashboardTest" class="method navigator-link" hash-for-method="verifycloseportal">verifycloseportal</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
                     </div> <!-- method-list-content passed suite-Surefire_suite -->
                   </li>
                 </ul>
@@ -134,6 +173,32 @@
     <div class="wrapper">
       <div class="main-panel-root">
         <div panel-name="suite-Surefire_suite" class="panel Surefire_suite">
+          <div class="suite-Surefire_suite-class-failed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="failed.png"/>
+              <span class="class-name">com.qa.qatask.testCASES.DashboardTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyIsSortedByPrice">
+                  </a> <!-- verifyIsSortedByPrice -->
+                  <span class="method-name">verifyIsSortedByPrice</span>
+                  <div class="stack-trace">java.lang.NumberFormatException: For input string: &quot;£5.00&quot;
+	at java.base/java.lang.NumberFormatException.forInputString(NumberFormatException.java:67)
+	at java.base/java.lang.Integer.parseInt(Integer.java:660)
+	at java.base/java.lang.Integer.parseInt(Integer.java:778)
+	at com.qa.qatask.pages.Dashboard.isSortedByPrice(Dashboard.java:141)
+	at com.qa.qatask.testCASES.DashboardTest.verifyIsSortedByPrice(DashboardTest.java:103)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 32 stack frames
+</div> <!-- stack-trace -->
+                  <em>
+(clear all filters)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Surefire_suite-class-failed -->
           <div class="suite-Surefire_suite-class-passed">
             <div class="main-panel-header rounded-window-top">
               <img src="passed.png"/>
@@ -142,9 +207,38 @@
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="verifyPortal">
-                  </a> <!-- verifyPortal -->
-                  <span class="method-name">verifyPortal</span>
+                  <a name="verifclearFilter">
+                  </a> <!-- verifclearFilter -->
+                  <span class="method-name">verifclearFilter</span>
+                  <em>
+(clear all filters)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifselectWomenShoes">
+                  </a> <!-- verifselectWomenShoes -->
+                  <span class="method-name">verifselectWomenShoes</span>
+                  <em>
+(Assert that “Nike” filter appeared below the filter menu)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifsorByPrice">
+                  </a> <!-- verifsorByPrice -->
+                  <span class="method-name">verifsorByPrice</span>
+                  <em>
+(clear all filters)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyNikeTextPresent">
+                  </a> <!-- verifyNikeTextPresent -->
+                  <span class="method-name">verifyNikeTextPresent</span>
+                  <em>
+(verify Text is present on page with Nike)                  </em>
                 </div> <!-- method-content -->
               </div> <!-- method -->
               <div class="method">
@@ -152,6 +246,8 @@
                   <a name="verifySearch">
                   </a> <!-- verifySearch -->
                   <span class="method-name">verifySearch</span>
+                  <em>
+(write Nik in search bar)                  </em>
                 </div> <!-- method-content -->
               </div> <!-- method -->
               <div class="method">
@@ -160,7 +256,7 @@
                   </a> <!-- verifyTitle -->
                   <span class="method-name">verifyTitle</span>
                   <em>
-(verify title page test)                  </em>
+(verify title page test //warm up test)                  </em>
                 </div> <!-- method-content -->
               </div> <!-- method -->
               <div class="method">
@@ -168,6 +264,26 @@
                   <a name="verifyacceptCookies">
                   </a> <!-- verifyacceptCookies -->
                   <span class="method-name">verifyacceptCookies</span>
+                  <em>
+(verify Accept Cookies)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyclickNike">
+                  </a> <!-- verifyclickNike -->
+                  <span class="method-name">verifyclickNike</span>
+                  <em>
+(verify Nike is clikced)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifycloseportal">
+                  </a> <!-- verifycloseportal -->
+                  <span class="method-name">verifycloseportal</span>
+                  <em>
+(close portal)                  </em>
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
@@ -225,28 +341,52 @@ data.addColumn('number', 'Number');
 data.addColumn('string', 'Method');
 data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
-data.addRows(4);
+data.addRows(10);
 data.setCell(0, 0, 0)
-data.setCell(0, 1, 'verifyPortal')
+data.setCell(0, 1, 'verifclearFilter')
 data.setCell(0, 2, 'com.qa.qatask.testCASES.DashboardTest')
-data.setCell(0, 3, 2635);
+data.setCell(0, 3, 5343);
 data.setCell(1, 0, 1)
-data.setCell(1, 1, 'verifyacceptCookies')
+data.setCell(1, 1, 'verifselectWomenShoes')
 data.setCell(1, 2, 'com.qa.qatask.testCASES.DashboardTest')
-data.setCell(1, 3, 1096);
+data.setCell(1, 3, 3362);
 data.setCell(2, 0, 2)
-data.setCell(2, 1, 'verifySearch')
+data.setCell(2, 1, 'verifyclickNike')
 data.setCell(2, 2, 'com.qa.qatask.testCASES.DashboardTest')
-data.setCell(2, 3, 80);
+data.setCell(2, 3, 3088);
 data.setCell(3, 0, 3)
-data.setCell(3, 1, 'verifyTitle')
+data.setCell(3, 1, 'verifsorByPrice')
 data.setCell(3, 2, 'com.qa.qatask.testCASES.DashboardTest')
-data.setCell(3, 3, 17);
+data.setCell(3, 3, 668);
+data.setCell(4, 0, 4)
+data.setCell(4, 1, 'verifycloseportal')
+data.setCell(4, 2, 'com.qa.qatask.testCASES.DashboardTest')
+data.setCell(4, 3, 655);
+data.setCell(5, 0, 5)
+data.setCell(5, 1, 'verifyNikeTextPresent')
+data.setCell(5, 2, 'com.qa.qatask.testCASES.DashboardTest')
+data.setCell(5, 3, 575);
+data.setCell(6, 0, 6)
+data.setCell(6, 1, 'verifyacceptCookies')
+data.setCell(6, 2, 'com.qa.qatask.testCASES.DashboardTest')
+data.setCell(6, 3, 506);
+data.setCell(7, 0, 7)
+data.setCell(7, 1, 'verifySearch')
+data.setCell(7, 2, 'com.qa.qatask.testCASES.DashboardTest')
+data.setCell(7, 3, 144);
+data.setCell(8, 0, 8)
+data.setCell(8, 1, 'verifyIsSortedByPrice')
+data.setCell(8, 2, 'com.qa.qatask.testCASES.DashboardTest')
+data.setCell(8, 3, 44);
+data.setCell(9, 0, 9)
+data.setCell(9, 1, 'verifyTitle')
+data.setCell(9, 2, 'com.qa.qatask.testCASES.DashboardTest')
+data.setCell(9, 3, 9);
 window.suiteTableData['Surefire_suite']= { tableData: data, tableDiv: 'times-div-Surefire_suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 3 seconds</span>
+              <span class="suite-total-time">Total running time: 14 seconds</span>
               <div id="times-div-Surefire_suite">
               </div> <!-- times-div-Surefire_suite -->
             </div> <!-- times-div -->
@@ -267,7 +407,7 @@ return data;
             <div class="ignored-class-div">
               <span class="ignored-class-name">com.qa.qatask.testCASES.DashboardTest</span>
               <div class="ignored-methods-div">
-                <span class="ignored-method-name">verifycloseportal</span>
+                <span class="ignored-method-name">verifyPortal</span>
                 <br/>
               </div> <!-- ignored-methods-div -->
             </div> <!-- ignored-class-div -->
@@ -285,20 +425,46 @@ return data;
                 <span class="method-start">0 ms</span>
               </div> <!-- configuration-test before -->
               <div class="test-method">
-                <span class="method-name">verifyPortal</span>
-                <span class="method-start">11286 ms</span>
+                <span class="method-name">verifycloseportal</span>
+                <span class="method-start">9946 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">verifyTitle</span>
-                <span class="method-start">13940 ms</span>
+                <span class="method-start">10618 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">verifyacceptCookies</span>
-                <span class="method-start">13962 ms</span>
+                <span class="method-start">10631 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">verifySearch</span>
-                <span class="method-start">15062 ms</span>
+                <span class="method-start">11142 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">verifyclickNike</span>
+                <span class="method-start">11289 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">verifyNikeTextPresent</span>
+                <span class="method-start">14379 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">verifselectWomenShoes</span>
+                <span class="method-start">14956 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">verifclearFilter</span>
+                <span class="method-start">18326 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">verifsorByPrice</span>
+                <span class="method-start">23673 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">verifyIsSortedByPrice</span>
+                <span class="method-start">24345 ms</span>
               </div> <!-- test-method -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
