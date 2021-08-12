@@ -134,18 +134,13 @@ public class Dashboard extends TestBase {
 
         List<WebElement> priceList = driver.findElements(By.xpath("//div[@class=\"ItemBox_title-content__1LClm\"]"));
         List<Integer> values = new ArrayList<Integer>();
-
-
             for (WebElement element : priceList) {
                 values.add(Integer.parseInt(element.getText()));
-
             }
             for( int j = 0; j <values.size(); j++)
                 System.out.println(" values.add(Integer.parseInt(element.getText()))======" + values.get(j));
-            //List ourAl = new ArrayList<>();
         return true;
         }
-
 
 
 }
