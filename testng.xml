@@ -1,8 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite name="All Test Suite">
-    <test verbose="3" preserve-order="true"
-          name="C:/Users/Lubna Yaqoob/Downloads/QATask/target/surefire-reports/testng-results.xml">
-        <classes/>
+<suite name="Functional Test Suite" verbose="5"  >
+
+    <test name = "dfdsf" verbose="5" preserve-order="true">
+        <classes>
+            <class name="com.qa.qatask.testCASES.DashboardTest"/><!-- close tag is redundant here-->
+        </classes>
     </test>
 </suite>
