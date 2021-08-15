@@ -1,4 +1,4 @@
-package util;
+package com.qa.qatask.util;
 
 public class TestUtil {
 

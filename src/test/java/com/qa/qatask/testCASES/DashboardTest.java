@@ -47,7 +47,7 @@ public class DashboardTest extends TestBase {
     @Test(priority = 3, description = "verify title page test -- warm up test")
     @Severity(SeverityLevel.MINOR)
     @Story("Story Name : Verify Title")
-    @Description("Story Name : Verify title page")
+    @Description("Story Name : verify title page")
     public void verifyTitle() {
         String title = dashoard.title();
         Assert.assertEquals("Vinted | Sell and buy clothes, shoes and accessories", title);
@@ -62,7 +62,8 @@ public class DashboardTest extends TestBase {
         Assert.assertTrue(true);
     }
 
-    @Test(priority = 5, description = "Test Case Description : Verify search input field contains string 'Nik'")
+    @Test(priority = 5, description = "verify search input field contains string 'Nik'")
+    @Description("verify search input field contains string 'Nik'")
     @Story("Story : Search Items")
     @Severity(SeverityLevel.BLOCKER)
     public void verifySearch() {
@@ -76,13 +77,14 @@ public class DashboardTest extends TestBase {
     public void verifyclickNike() {
         dashoard.clickNike();
         Assert.assertTrue(true);
-
     }
 
     @Test(priority = 7, description = "verify Text is present on page with Nike")
-    @Severity(SeverityLevel.CRITICAL)
+    @Description("verify Nike text is clicked from options available list")
+    @Severity(SeverityLevel.NORMAL)
+    @Story("Story : Search Items")
     public void verifyNikeTextPresent() {
-        dashoard.NikeTextPresent();
+        Boolean res_NikeTextPresent =  dashoard.NikeTextPresent();
         Assert.assertEquals(true , true);
     }
 

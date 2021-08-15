@@ -5,7 +5,6 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
-import util.TestUtil;
 
 
 import java.util.ArrayList;
@@ -49,12 +48,6 @@ public class Dashboard extends TestBase {
     @FindBy(xpath = "//span[@class=\"Button_label__3jCra\"]//span[text()='Sort by']")
     WebElement we_sortBy;
 
-    @FindBy(xpath = "//span[text()='Price: Low to High']//parent::h2[@class='Text_text__QBn4- Text_title__2EQGT Text_left__3s3CR']")
-    WebElement we_lowToHighPrice;
-
-    @FindBy(xpath = "//li[@class=\"pile__element\"]//div/descendant::span[text()='Price: high to low']")
-    WebElement we_lowToHighPrice1;
-
     @FindBy(xpath = "//button[@type='button']//span/descendant::span[text()='Price']")
     WebElement we_price;
 
@@ -65,9 +58,8 @@ public class Dashboard extends TestBase {
     WebElement we_priceTo;
 
     @FindBy(xpath = "//h1[@class='u-margin-top-none']")
-    WebElement we_getOut;
+    WebElement we_getOutOfPriceDiv;
 
-    //div[@class="ItemBox_title__2FmDy"]//div/descendant::h3[@class='Text_text__QBn4- Text_subtitle__1I9iB Text_left__3s3CR Text_amplified__2ccjx Text_bold__1scEZ']
 
     //constructor of the class
     public Dashboard() {
@@ -150,41 +142,39 @@ public class Dashboard extends TestBase {
 
 
     public Boolean selectPriceRange() {
+
+        we_priceFrom.clear();
         we_priceFrom.sendKeys("5");
+        we_priceTo.clear();
         we_priceTo.sendKeys("10");
         return true;
     }
 
 
     public Boolean itemsWithInpriceRangeData() throws InterruptedException {
-        we_getOut.click();
+        we_getOutOfPriceDiv.click();
+
         Thread.sleep(5000);
         List<WebElement> itemsWithInPriceRange = driver.findElements(By.xpath("//div[@class=\"ItemBox_title__2FmDy\"]//div/descendant::h3[@class='Text_text__QBn4- Text_subtitle__1I9iB Text_left__3s3CR Text_amplified__2ccjx Text_bold__1scEZ']"));
-        List<String> all_elements_text = new ArrayList<String>();
+        List<Float> all_elements_text = new ArrayList<Float>();
 
         for (int i = 0; i < itemsWithInPriceRange.size(); i++) {
             //loading text of each element in to array all_elements_text
-            all_elements_text.add(itemsWithInPriceRange.get(i).getText());
-            //to print directly
-            System.out.println("-------------" + itemsWithInPriceRange.get(i).getText());
+            String value = (itemsWithInPriceRange.get(i).getText());
+            value = value.replace("£", "");
+            all_elements_text.add(Float.parseFloat(value));
+            //System.out.println(" float list" + all_elements_text.get(i));
+            //System.out.println("-------------" + itemsWithInPriceRange.get(i).getText());
         }
-        return true;
+
+        Boolean verifyIfResultTrue = inRange(all_elements_text, 5 , 10);
+        System.out.println( "verifyIfResultTrue"  + verifyIfResultTrue);
+        return verifyIfResultTrue;
     }
 
-    public Boolean sortByPriceResult() throws InterruptedException {
-        we_getOut.click();
-        Thread.sleep(5000);
-        List<WebElement> itemsWithInPriceRange = driver.findElements(By.xpath("//div[@class=\"ItemBox_title__2FmDy\"]//div/descendant::h3[@class='Text_text__QBn4- Text_subtitle__1I9iB Text_left__3s3CR Text_amplified__2ccjx Text_bold__1scEZ']"));
-        List<String> all_elements_text = new ArrayList<String>();
 
-        // List<Integer> all_elements_text = new ArrayList<Integer>();
-        for (int i = 0; i < itemsWithInPriceRange.size(); i++) {
-            //loading text of each element in to array all_elements_text
-            all_elements_text.add(itemsWithInPriceRange.get(i).getText());
-            //to print directly
-            System.out.println("-------------" + itemsWithInPriceRange.get(i).getText());
-        }
-        return true;
+    private static boolean inRange(List<Float> list, float min, float max) {
+        return list.stream().allMatch(i -> i >= min && i <= max);
     }
 
 }

@@ -2,60 +2,60 @@
 <testng-results ignored="1" total="13" passed="12" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2021-08-14T18:25:38 CEST" name="Functional Test Suite" finished-at="2021-08-14T18:26:13 CEST" duration-ms="35128">
+  <suite started-at="2021-08-15T20:17:41 CEST" name="Functional Test Suite" finished-at="2021-08-15T20:18:24 CEST" duration-ms="43359">
     <groups>
     </groups>
-    <test started-at="2021-08-14T18:25:38 CEST" name="QA Task Vinted" finished-at="2021-08-14T18:26:13 CEST" duration-ms="35128">
+    <test started-at="2021-08-15T20:17:41 CEST" name="QA Task Vinted" finished-at="2021-08-15T20:18:24 CEST" duration-ms="43359">
       <class name="com.qa.qatask.testCASES.DashboardTest">
-        <test-method is-config="true" signature="setUp()[pri:0, instance:com.qa.qatask.testCASES.DashboardTest@7e97551f]" started-at="2021-08-14T18:25:39 CEST" name="setUp" finished-at="2021-08-14T18:25:50 CEST" duration-ms="11149" status="PASS">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.qa.qatask.testCASES.DashboardTest@27e32fe4]" started-at="2021-08-15T20:17:41 CEST" name="setUp" finished-at="2021-08-15T20:17:56 CEST" duration-ms="14654" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="verifycloseportal()[pri:1, instance:com.qa.qatask.testCASES.DashboardTest@7e97551f]" started-at="2021-08-14T18:25:50 CEST" name="verifycloseportal" description="close portal" finished-at="2021-08-14T18:25:51 CEST" duration-ms="870" status="PASS">
+        <test-method signature="verifycloseportal()[pri:1, instance:com.qa.qatask.testCASES.DashboardTest@27e32fe4]" started-at="2021-08-15T20:17:56 CEST" name="verifycloseportal" description="close portal" finished-at="2021-08-15T20:17:57 CEST" duration-ms="1168" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifycloseportal -->
-        <test-method signature="verifyTitle()[pri:3, instance:com.qa.qatask.testCASES.DashboardTest@7e97551f]" started-at="2021-08-14T18:25:51 CEST" name="verifyTitle" description="verify title page test //warm up test" finished-at="2021-08-14T18:25:51 CEST" duration-ms="8" status="PASS">
+        <test-method signature="verifyTitle()[pri:3, instance:com.qa.qatask.testCASES.DashboardTest@27e32fe4]" started-at="2021-08-15T20:17:57 CEST" name="verifyTitle" description="verify title page test -- warm up test" finished-at="2021-08-15T20:17:57 CEST" duration-ms="11" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyTitle -->
-        <test-method signature="verifyacceptCookies()[pri:4, instance:com.qa.qatask.testCASES.DashboardTest@7e97551f]" started-at="2021-08-14T18:25:51 CEST" name="verifyacceptCookies" description="verify Accept Cookies" finished-at="2021-08-14T18:25:51 CEST" duration-ms="399" status="PASS">
+        <test-method signature="verifyacceptCookies()[pri:4, instance:com.qa.qatask.testCASES.DashboardTest@27e32fe4]" started-at="2021-08-15T20:17:57 CEST" name="verifyacceptCookies" description="verify accept cookies" finished-at="2021-08-15T20:17:58 CEST" duration-ms="669" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyacceptCookies -->
-        <test-method signature="verifySearch()[pri:5, instance:com.qa.qatask.testCASES.DashboardTest@7e97551f]" started-at="2021-08-14T18:25:51 CEST" name="verifySearch" description="write Nik in search bar" finished-at="2021-08-14T18:25:51 CEST" duration-ms="231" status="PASS">
+        <test-method signature="verifySearch()[pri:5, instance:com.qa.qatask.testCASES.DashboardTest@27e32fe4]" started-at="2021-08-15T20:17:58 CEST" name="verifySearch" description="verify search input field contains string &#039;Nik&#039;" finished-at="2021-08-15T20:17:58 CEST" duration-ms="230" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifySearch -->
-        <test-method signature="verifyclickNike()[pri:6, instance:com.qa.qatask.testCASES.DashboardTest@7e97551f]" started-at="2021-08-14T18:25:51 CEST" name="verifyclickNike" description="verify Nike is clikced" finished-at="2021-08-14T18:25:56 CEST" duration-ms="4130" status="PASS">
+        <test-method signature="verifyclickNike()[pri:6, instance:com.qa.qatask.testCASES.DashboardTest@27e32fe4]" started-at="2021-08-15T20:17:58 CEST" name="verifyclickNike" description="verify Nike text is clicked from options available list" finished-at="2021-08-15T20:18:02 CEST" duration-ms="4482" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyclickNike -->
-        <test-method signature="verifyNikeTextPresent()[pri:7, instance:com.qa.qatask.testCASES.DashboardTest@7e97551f]" started-at="2021-08-14T18:25:56 CEST" name="verifyNikeTextPresent" description="verify Text is present on page with Nike" finished-at="2021-08-14T18:25:57 CEST" duration-ms="933" status="PASS">
+        <test-method signature="verifyNikeTextPresent()[pri:7, instance:com.qa.qatask.testCASES.DashboardTest@27e32fe4]" started-at="2021-08-15T20:18:02 CEST" name="verifyNikeTextPresent" description="verify Text is present on page with Nike" finished-at="2021-08-15T20:18:03 CEST" duration-ms="1068" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyNikeTextPresent -->
-        <test-method signature="verifselectWomenShoes()[pri:8, instance:com.qa.qatask.testCASES.DashboardTest@7e97551f]" started-at="2021-08-14T18:25:57 CEST" name="verifselectWomenShoes" description="Assert that “Nike” filter appeared below the filter menu" finished-at="2021-08-14T18:26:00 CEST" duration-ms="3506" status="PASS">
+        <test-method signature="verifselectWomenShoes()[pri:8, instance:com.qa.qatask.testCASES.DashboardTest@27e32fe4]" started-at="2021-08-15T20:18:03 CEST" name="verifselectWomenShoes" description="Assert that “Nike” filter appeared below the filter menu" finished-at="2021-08-15T20:18:09 CEST" duration-ms="5129" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifselectWomenShoes -->
-        <test-method signature="verifyclearFilter()[pri:9, instance:com.qa.qatask.testCASES.DashboardTest@7e97551f]" started-at="2021-08-14T18:26:00 CEST" name="verifyclearFilter" description="clear all filters" finished-at="2021-08-14T18:26:05 CEST" duration-ms="5408" status="PASS">
+        <test-method signature="verifyclearFilter()[pri:9, instance:com.qa.qatask.testCASES.DashboardTest@27e32fe4]" started-at="2021-08-15T20:18:09 CEST" name="verifyclearFilter" description="clear all filters" finished-at="2021-08-15T20:18:14 CEST" duration-ms="5806" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyclearFilter -->
-        <test-method signature="verifysortByPrice()[pri:10, instance:com.qa.qatask.testCASES.DashboardTest@7e97551f]" started-at="2021-08-14T18:26:05 CEST" name="verifysortByPrice" description="clear all filters" finished-at="2021-08-14T18:26:07 CEST" duration-ms="1300" status="PASS">
+        <test-method signature="verifysortByPrice()[pri:10, instance:com.qa.qatask.testCASES.DashboardTest@27e32fe4]" started-at="2021-08-15T20:18:14 CEST" name="verifysortByPrice" description="clear all filters" finished-at="2021-08-15T20:18:16 CEST" duration-ms="1820" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifysortByPrice -->
-        <test-method signature="verifyselectPrice()[pri:11, instance:com.qa.qatask.testCASES.DashboardTest@7e97551f]" started-at="2021-08-14T18:26:07 CEST" name="verifyselectPrice" description="click on price dropdown" finished-at="2021-08-14T18:26:07 CEST" duration-ms="331" status="PASS">
+        <test-method signature="verifyselectPrice()[pri:11, instance:com.qa.qatask.testCASES.DashboardTest@27e32fe4]" started-at="2021-08-15T20:18:16 CEST" name="verifyselectPrice" description="click on price dropdown" finished-at="2021-08-15T20:18:17 CEST" duration-ms="1165" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyselectPrice -->
-        <test-method signature="verifyselectPriceRange()[pri:12, instance:com.qa.qatask.testCASES.DashboardTest@7e97551f]" started-at="2021-08-14T18:26:07 CEST" name="verifyselectPriceRange" description="select price range" finished-at="2021-08-14T18:26:08 CEST" duration-ms="549" status="PASS">
+        <test-method signature="verifyselectPriceRange()[pri:12, instance:com.qa.qatask.testCASES.DashboardTest@27e32fe4]" started-at="2021-08-15T20:18:17 CEST" name="verifyselectPriceRange" description="select price range" finished-at="2021-08-15T20:18:18 CEST" duration-ms="224" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyselectPriceRange -->
-        <test-method signature="verifyitemsWithInpriceRangeData()[pri:13, instance:com.qa.qatask.testCASES.DashboardTest@7e97551f]" started-at="2021-08-14T18:26:08 CEST" name="verifyitemsWithInpriceRangeData" description="select price range" finished-at="2021-08-14T18:26:13 CEST" duration-ms="5803" status="PASS">
+        <test-method signature="verifyitemsWithInpriceRangeData()[pri:13, instance:com.qa.qatask.testCASES.DashboardTest@27e32fe4]" started-at="2021-08-15T20:18:18 CEST" name="verifyitemsWithInpriceRangeData" description="select price range" finished-at="2021-08-15T20:18:24 CEST" duration-ms="6266" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyitemsWithInpriceRangeData -->
