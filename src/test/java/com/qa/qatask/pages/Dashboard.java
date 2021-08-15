@@ -9,6 +9,7 @@ import util.TestUtil;
 
 
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.List;
 import java.util.concurrent.TimeUnit;
 
@@ -54,6 +55,19 @@ public class Dashboard extends TestBase {
     @FindBy(xpath = "//li[@class=\"pile__element\"]//div/descendant::span[text()='Price: high to low']")
     WebElement we_lowToHighPrice1;
 
+    @FindBy(xpath = "//button[@type='button']//span/descendant::span[text()='Price']")
+    WebElement we_price;
+
+    @FindBy(id = "price_from")
+    WebElement we_priceFrom;
+
+    @FindBy(id = "price_to")
+    WebElement we_priceTo;
+
+    @FindBy(xpath = "//h1[@class='u-margin-top-none']")
+    WebElement we_getOut;
+
+    //div[@class="ItemBox_title__2FmDy"]//div/descendant::h3[@class='Text_text__QBn4- Text_subtitle__1I9iB Text_left__3s3CR Text_amplified__2ccjx Text_bold__1scEZ']
 
     //constructor of the class
     public Dashboard() {
@@ -118,7 +132,7 @@ public class Dashboard extends TestBase {
         return true;
     }
 
-    public Boolean sorByPrice() {
+    public Boolean sortByPrice() {
         we_sortBy.click();
         List<WebElement> priceList = driver.findElements(By.xpath("//ul[@class=\"pile\"]"));
         for (WebElement element : priceList) {
@@ -126,21 +140,51 @@ public class Dashboard extends TestBase {
                 element.click();
             }
         }
-       return true;
+        return true;
+    }
+
+    public Boolean selectPrice() {
+        we_price.click();
+        return true;
     }
 
 
-    public Boolean isSortedByPrice(){
-
-        List<WebElement> priceList = driver.findElements(By.xpath("//div[@class=\"ItemBox_title-content__1LClm\"]"));
-        List<Integer> values = new ArrayList<Integer>();
-            for (WebElement element : priceList) {
-                values.add(Integer.parseInt(element.getText()));
-            }
-            for( int j = 0; j <values.size(); j++)
-                System.out.println(" values.add(Integer.parseInt(element.getText()))======" + values.get(j));
+    public Boolean selectPriceRange() {
+        we_priceFrom.sendKeys("5");
+        we_priceTo.sendKeys("10");
         return true;
-        }
+    }
 
+
+    public Boolean itemsWithInpriceRangeData() throws InterruptedException {
+        we_getOut.click();
+        Thread.sleep(5000);
+        List<WebElement> itemsWithInPriceRange = driver.findElements(By.xpath("//div[@class=\"ItemBox_title__2FmDy\"]//div/descendant::h3[@class='Text_text__QBn4- Text_subtitle__1I9iB Text_left__3s3CR Text_amplified__2ccjx Text_bold__1scEZ']"));
+        List<String> all_elements_text = new ArrayList<String>();
+
+        for (int i = 0; i < itemsWithInPriceRange.size(); i++) {
+            //loading text of each element in to array all_elements_text
+            all_elements_text.add(itemsWithInPriceRange.get(i).getText());
+            //to print directly
+            System.out.println("-------------" + itemsWithInPriceRange.get(i).getText());
+        }
+        return true;
+    }
+
+    public Boolean sortByPriceResult() throws InterruptedException {
+        we_getOut.click();
+        Thread.sleep(5000);
+        List<WebElement> itemsWithInPriceRange = driver.findElements(By.xpath("//div[@class=\"ItemBox_title__2FmDy\"]//div/descendant::h3[@class='Text_text__QBn4- Text_subtitle__1I9iB Text_left__3s3CR Text_amplified__2ccjx Text_bold__1scEZ']"));
+        List<String> all_elements_text = new ArrayList<String>();
+
+        // List<Integer> all_elements_text = new ArrayList<Integer>();
+        for (int i = 0; i < itemsWithInPriceRange.size(); i++) {
+            //loading text of each element in to array all_elements_text
+            all_elements_text.add(itemsWithInPriceRange.get(i).getText());
+            //to print directly
+            System.out.println("-------------" + itemsWithInPriceRange.get(i).getText());
+        }
+        return true;
+    }
 
 }

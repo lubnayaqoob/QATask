@@ -1,103 +1,65 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="1" total="11" passed="9" failed="1" skipped="0">
+<testng-results ignored="1" total="13" passed="12" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2021-08-13T20:11:33 CEST" name="Functional Test Suite" finished-at="2021-08-13T20:11:57 CEST" duration-ms="24284">
+  <suite started-at="2021-08-14T18:25:38 CEST" name="Functional Test Suite" finished-at="2021-08-14T18:26:13 CEST" duration-ms="35128">
     <groups>
     </groups>
-    <test started-at="2021-08-13T20:11:33 CEST" name="dfdsf" finished-at="2021-08-13T20:11:57 CEST" duration-ms="24284">
+    <test started-at="2021-08-14T18:25:38 CEST" name="QA Task Vinted" finished-at="2021-08-14T18:26:13 CEST" duration-ms="35128">
       <class name="com.qa.qatask.testCASES.DashboardTest">
-        <test-method is-config="true" signature="setUp()[pri:0, instance:com.qa.qatask.testCASES.DashboardTest@7ff2b8d2]" started-at="2021-08-13T20:11:33 CEST" name="setUp" finished-at="2021-08-13T20:11:42 CEST" duration-ms="9225" status="PASS">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.qa.qatask.testCASES.DashboardTest@7e97551f]" started-at="2021-08-14T18:25:39 CEST" name="setUp" finished-at="2021-08-14T18:25:50 CEST" duration-ms="11149" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="verifycloseportal()[pri:1, instance:com.qa.qatask.testCASES.DashboardTest@7ff2b8d2]" started-at="2021-08-13T20:11:42 CEST" name="verifycloseportal" description="close portal" finished-at="2021-08-13T20:11:43 CEST" duration-ms="379" status="PASS">
+        <test-method signature="verifycloseportal()[pri:1, instance:com.qa.qatask.testCASES.DashboardTest@7e97551f]" started-at="2021-08-14T18:25:50 CEST" name="verifycloseportal" description="close portal" finished-at="2021-08-14T18:25:51 CEST" duration-ms="870" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifycloseportal -->
-        <test-method signature="verifyTitle()[pri:3, instance:com.qa.qatask.testCASES.DashboardTest@7ff2b8d2]" started-at="2021-08-13T20:11:43 CEST" name="verifyTitle" description="verify title page test //warm up test" finished-at="2021-08-13T20:11:43 CEST" duration-ms="18" status="PASS">
+        <test-method signature="verifyTitle()[pri:3, instance:com.qa.qatask.testCASES.DashboardTest@7e97551f]" started-at="2021-08-14T18:25:51 CEST" name="verifyTitle" description="verify title page test //warm up test" finished-at="2021-08-14T18:25:51 CEST" duration-ms="8" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyTitle -->
-        <test-method signature="verifyacceptCookies()[pri:4, instance:com.qa.qatask.testCASES.DashboardTest@7ff2b8d2]" started-at="2021-08-13T20:11:43 CEST" name="verifyacceptCookies" description="verify Accept Cookies" finished-at="2021-08-13T20:11:43 CEST" duration-ms="308" status="PASS">
+        <test-method signature="verifyacceptCookies()[pri:4, instance:com.qa.qatask.testCASES.DashboardTest@7e97551f]" started-at="2021-08-14T18:25:51 CEST" name="verifyacceptCookies" description="verify Accept Cookies" finished-at="2021-08-14T18:25:51 CEST" duration-ms="399" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyacceptCookies -->
-        <test-method signature="verifySearch()[pri:5, instance:com.qa.qatask.testCASES.DashboardTest@7ff2b8d2]" started-at="2021-08-13T20:11:43 CEST" name="verifySearch" description="write Nik in search bar" finished-at="2021-08-13T20:11:43 CEST" duration-ms="134" status="PASS">
+        <test-method signature="verifySearch()[pri:5, instance:com.qa.qatask.testCASES.DashboardTest@7e97551f]" started-at="2021-08-14T18:25:51 CEST" name="verifySearch" description="write Nik in search bar" finished-at="2021-08-14T18:25:51 CEST" duration-ms="231" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifySearch -->
-        <test-method signature="verifyclickNike()[pri:6, instance:com.qa.qatask.testCASES.DashboardTest@7ff2b8d2]" started-at="2021-08-13T20:11:43 CEST" name="verifyclickNike" description="verify Nike is clikced" finished-at="2021-08-13T20:11:46 CEST" duration-ms="3135" status="PASS">
+        <test-method signature="verifyclickNike()[pri:6, instance:com.qa.qatask.testCASES.DashboardTest@7e97551f]" started-at="2021-08-14T18:25:51 CEST" name="verifyclickNike" description="verify Nike is clikced" finished-at="2021-08-14T18:25:56 CEST" duration-ms="4130" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyclickNike -->
-        <test-method signature="verifyNikeTextPresent()[pri:7, instance:com.qa.qatask.testCASES.DashboardTest@7ff2b8d2]" started-at="2021-08-13T20:11:46 CEST" name="verifyNikeTextPresent" description="verify Text is present on page with Nike" finished-at="2021-08-13T20:11:47 CEST" duration-ms="639" status="PASS">
+        <test-method signature="verifyNikeTextPresent()[pri:7, instance:com.qa.qatask.testCASES.DashboardTest@7e97551f]" started-at="2021-08-14T18:25:56 CEST" name="verifyNikeTextPresent" description="verify Text is present on page with Nike" finished-at="2021-08-14T18:25:57 CEST" duration-ms="933" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyNikeTextPresent -->
-        <test-method signature="verifselectWomenShoes()[pri:8, instance:com.qa.qatask.testCASES.DashboardTest@7ff2b8d2]" started-at="2021-08-13T20:11:47 CEST" name="verifselectWomenShoes" description="Assert that “Nike” filter appeared below the filter menu" finished-at="2021-08-13T20:11:51 CEST" duration-ms="3508" status="PASS">
+        <test-method signature="verifselectWomenShoes()[pri:8, instance:com.qa.qatask.testCASES.DashboardTest@7e97551f]" started-at="2021-08-14T18:25:57 CEST" name="verifselectWomenShoes" description="Assert that “Nike” filter appeared below the filter menu" finished-at="2021-08-14T18:26:00 CEST" duration-ms="3506" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifselectWomenShoes -->
-        <test-method signature="verifclearFilter()[pri:9, instance:com.qa.qatask.testCASES.DashboardTest@7ff2b8d2]" started-at="2021-08-13T20:11:51 CEST" name="verifclearFilter" description="clear all filters" finished-at="2021-08-13T20:11:56 CEST" duration-ms="5366" status="PASS">
+        <test-method signature="verifyclearFilter()[pri:9, instance:com.qa.qatask.testCASES.DashboardTest@7e97551f]" started-at="2021-08-14T18:26:00 CEST" name="verifyclearFilter" description="clear all filters" finished-at="2021-08-14T18:26:05 CEST" duration-ms="5408" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- verifclearFilter -->
-        <test-method signature="verifsorByPrice()[pri:10, instance:com.qa.qatask.testCASES.DashboardTest@7ff2b8d2]" started-at="2021-08-13T20:11:56 CEST" name="verifsorByPrice" description="clear all filters" finished-at="2021-08-13T20:11:57 CEST" duration-ms="1059" status="PASS">
+        </test-method> <!-- verifyclearFilter -->
+        <test-method signature="verifysortByPrice()[pri:10, instance:com.qa.qatask.testCASES.DashboardTest@7e97551f]" started-at="2021-08-14T18:26:05 CEST" name="verifysortByPrice" description="clear all filters" finished-at="2021-08-14T18:26:07 CEST" duration-ms="1300" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- verifsorByPrice -->
-        <test-method signature="verifyIsSortedByPrice()[pri:11, instance:com.qa.qatask.testCASES.DashboardTest@7ff2b8d2]" started-at="2021-08-13T20:11:57 CEST" name="verifyIsSortedByPrice" description="clear all filters" finished-at="2021-08-13T20:11:57 CEST" duration-ms="48" status="FAIL">
-          <exception class="java.lang.NumberFormatException">
-            <message>
-              <![CDATA[For input string: "£1.00"]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[java.lang.NumberFormatException: For input string: "£1.00"
-at java.base/java.lang.NumberFormatException.forInputString(NumberFormatException.java:67)
-at java.base/java.lang.Integer.parseInt(Integer.java:660)
-at java.base/java.lang.Integer.parseInt(Integer.java:778)
-at com.qa.qatask.pages.Dashboard.isSortedByPrice(Dashboard.java:138)
-at com.qa.qatask.testCASES.DashboardTest.verifyIsSortedByPrice(DashboardTest.java:103)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:78)
-at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-at java.base/java.lang.reflect.Method.invoke(Method.java:567)
-at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
-at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
-at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
-at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
-at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
-at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
-at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
-at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-at org.testng.TestRunner.privateRun(TestRunner.java:794)
-at org.testng.TestRunner.run(TestRunner.java:596)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
-at org.testng.SuiteRunner.run(SuiteRunner.java:276)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
-at org.testng.TestNG.runSuites(TestNG.java:1063)
-at org.testng.TestNG.run(TestNG.java:1031)
-at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:283)
-at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:75)
-at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:120)
-at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:384)
-at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:345)
-at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:126)
-at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:418)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.NumberFormatException -->
+        </test-method> <!-- verifysortByPrice -->
+        <test-method signature="verifyselectPrice()[pri:11, instance:com.qa.qatask.testCASES.DashboardTest@7e97551f]" started-at="2021-08-14T18:26:07 CEST" name="verifyselectPrice" description="click on price dropdown" finished-at="2021-08-14T18:26:07 CEST" duration-ms="331" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- verifyIsSortedByPrice -->
+        </test-method> <!-- verifyselectPrice -->
+        <test-method signature="verifyselectPriceRange()[pri:12, instance:com.qa.qatask.testCASES.DashboardTest@7e97551f]" started-at="2021-08-14T18:26:07 CEST" name="verifyselectPriceRange" description="select price range" finished-at="2021-08-14T18:26:08 CEST" duration-ms="549" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyselectPriceRange -->
+        <test-method signature="verifyitemsWithInpriceRangeData()[pri:13, instance:com.qa.qatask.testCASES.DashboardTest@7e97551f]" started-at="2021-08-14T18:26:08 CEST" name="verifyitemsWithInpriceRangeData" description="select price range" finished-at="2021-08-14T18:26:13 CEST" duration-ms="5803" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyitemsWithInpriceRangeData -->
       </class> <!-- com.qa.qatask.testCASES.DashboardTest -->
-    </test> <!-- dfdsf -->
+    </test> <!-- QA Task Vinted -->
   </suite> <!-- Functional Test Suite -->
 </testng-results>

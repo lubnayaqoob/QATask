@@ -2,7 +2,7 @@
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 <suite name="Functional Test Suite" verbose="5"  >
 
-    <test name = "dfdsf" verbose="5" preserve-order="true">
+    <test name = "QA Task Vinted" verbose="5" preserve-order="true">
         <classes>
             <class name="com.qa.qatask.testCASES.DashboardTest"/><!-- close tag is redundant here-->
         </classes>

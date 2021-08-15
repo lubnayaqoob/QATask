@@ -1,8 +1,4 @@
 -------------------------------------------------------------------------------
 Test set: TestSuite
 -------------------------------------------------------------------------------
-Tests run: 10, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 26.91 s <<< FAILURE! - in TestSuite
-verifyIsSortedByPrice(com.qa.qatask.testCASES.DashboardTest)  Time elapsed: 0.073 s  <<< FAILURE!
-java.lang.NumberFormatException: For input string: "£1.00"
-	at com.qa.qatask.testCASES.DashboardTest.verifyIsSortedByPrice(DashboardTest.java:103)
-
+Tests run: 12, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 37.783 s - in TestSuite
