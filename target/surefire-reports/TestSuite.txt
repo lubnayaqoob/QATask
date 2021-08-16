@@ -1,0 +1,20 @@
+-------------------------------------------------------------------------------
+Test set: TestSuite
+-------------------------------------------------------------------------------
+Tests run: 26, Failures: 4, Errors: 0, Skipped: 0, Time elapsed: 103.631 s <<< FAILURE! - in TestSuite
+verify_isSortedByLowToHigh(com.qa.qatask.testCASES.DashboardTest)  Time elapsed: 5.664 s  <<< FAILURE!
+java.lang.AssertionError: Not in ascending order
+	at com.qa.qatask.testCASES.DashboardTest.verify_isSortedByLowToHigh(DashboardTest.java:118)
+
+verify_itemsWithInpriceRangeData(com.qa.qatask.testCASES.DashboardTest)  Time elapsed: 5.713 s  <<< FAILURE!
+java.lang.AssertionError: expected [true] but found [false]
+	at com.qa.qatask.testCASES.DashboardTest.verify_itemsWithInpriceRangeData(DashboardTest.java:140)
+
+verify_isSortedByLowToHigh(com.qa.qatask.testCASES.DashboardTest)  Time elapsed: 5.431 s  <<< FAILURE!
+java.lang.AssertionError: Not in ascending order
+	at com.qa.qatask.testCASES.DashboardTest.verify_isSortedByLowToHigh(DashboardTest.java:118)
+
+verify_itemsWithInpriceRangeData(com.qa.qatask.testCASES.DashboardTest)  Time elapsed: 5.71 s  <<< FAILURE!
+java.lang.AssertionError: expected [true] but found [false]
+	at com.qa.qatask.testCASES.DashboardTest.verify_itemsWithInpriceRangeData(DashboardTest.java:140)
+

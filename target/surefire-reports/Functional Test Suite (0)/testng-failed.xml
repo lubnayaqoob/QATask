@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Functional Test Suite (0)]" guice-stage="DEVELOPMENT" verbose="0">
+  <listeners>
+    <listener class-name="com.qa.qatask.allureReport.TestAllureListener"/>
+  </listeners>
+  <test thread-count="5" name="QA Task Vinted(failed)" verbose="0">
+    <classes>
+      <class name="com.qa.qatask.testCASES.DashboardTest">
+        <methods>
+          <include name="verify_isSortedByLowToHigh"/>
+          <include name="quitBrowserTest"/>
+          <include name="verify_itemsWithInpriceRangeData"/>
+          <include name="setUp"/>
+        </methods>
+      </class> <!-- com.qa.qatask.testCASES.DashboardTest -->
+    </classes>
+  </test> <!-- QA Task Vinted(failed) -->
+</suite> <!-- Failed suite [Functional Test Suite (0)] -->
