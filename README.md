@@ -46,6 +46,8 @@ To Run it as a test suite, using ``testng.xml`` file, use the image below that i
 * Lastly run the command `` allure serve``to generate allure reports
 
 ![](images/3.png)
+if any of test case will be failed, it will capture its screenshot as shown in the image below.
+![](images/4.png)
 ## Questions or Suggestions
 Feel free to send me the questions or suggestion at my email address.
 lubnayaqoob@gmail.com
