@@ -59,6 +59,8 @@ public class Dashboard extends TestBase {
     @FindBy(xpath = "//h1[@class='u-margin-top-none']")
     WebElement we_getOutOfPriceDiv;
 
+    String priceFrom = prop.getProperty("priceFrom");
+    String priceTo = prop.getProperty("priceTo");
 
     //constructor of the class
     public Dashboard() {
@@ -176,7 +178,7 @@ public class Dashboard extends TestBase {
         return true;
     }
 
-    public Boolean selectPrice() {
+    public Boolean clickPrice() {
         try {
             we_price.click();
             return true;
@@ -186,14 +188,11 @@ public class Dashboard extends TestBase {
         }
     }
 
-
-    public Boolean selectPriceRange() {
-
+    public void selectPriceRange() {
         we_priceFrom.clear();
-        we_priceFrom.sendKeys("5");
+        we_priceFrom.sendKeys(priceFrom);
         we_priceTo.clear();
-        we_priceTo.sendKeys("10");
-        return true;
+        we_priceTo.sendKeys(priceTo);
     }
 
 
@@ -210,7 +209,7 @@ public class Dashboard extends TestBase {
             value = value.replace("£", "");
             all_elements_text.add(Float.parseFloat(value));
         }
-        Boolean verifyIfResultTrue = inRange(all_elements_text, 5, 10);
+        Boolean verifyIfResultTrue = inRange(all_elements_text, Float.parseFloat(priceFrom), Float.parseFloat((priceTo)));
         System.out.println("verifyIfResultTrue" + verifyIfResultTrue);
         return verifyIfResultTrue;
     }

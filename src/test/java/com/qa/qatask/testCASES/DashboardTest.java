@@ -112,23 +112,22 @@ public class DashboardTest extends TestBase {
 
     @Test(priority = 11, description = "click on price dropdown")
     @Severity(SeverityLevel.NORMAL)
-    public void verify_selectPrice() {
-        dashboard.selectPrice();
-        Assert.assertEquals(true, true);
+    public void verify_clickPrice() {
+        Boolean res_clickPrice = dashboard.clickPrice();
+        Assert.assertTrue(res_clickPrice);
     }
 
     @Test(priority = 12, description = "select price range")
     @Severity(SeverityLevel.NORMAL)
     public void verify_selectPriceRange() {
         dashboard.selectPriceRange();
-        Assert.assertEquals(true, true);
     }
 
     @Test(priority = 13, description = "select price range")
     @Severity(SeverityLevel.NORMAL)
     public void verify_itemsWithInpriceRangeData() throws InterruptedException {
-        dashboard.itemsWithInpriceRangeData();
-        Assert.assertEquals(true, true);
+        Boolean res_itemsWithInpriceRangeData  = dashboard.itemsWithInpriceRangeData();
+        Assert.assertTrue(res_itemsWithInpriceRangeData);
     }
 
 @AfterTest
