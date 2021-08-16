@@ -107,7 +107,6 @@ public class Dashboard extends TestBase {
             e.printStackTrace();
             return false;
         }
-
     }
 
     //search with key 'Nik;
@@ -196,7 +195,6 @@ public class Dashboard extends TestBase {
         we_priceTo.sendKeys(priceTo);
     }
 
-
     public Boolean itemsWithInpriceRangeData() throws InterruptedException {
         we_getOutOfPriceDiv.click();
 
@@ -218,9 +216,6 @@ public class Dashboard extends TestBase {
     private static boolean inRange(List<Float> list, float min, float max) {
         return list.stream().allMatch(i -> i >= min && i <= max);
     }
-
-
-
 
     public Boolean isSortedByLowToHigh() throws InterruptedException {
         Thread.sleep(5000);

@@ -1,1 +1,0 @@
-{"uuid":"80b12758-3576-4ccb-a2fc-cd0eec7d5992","name":"QATask","children":["e0f52dbd-01e9-49c1-a1c7-d9d657e86b85"],"befores":[{"name":"setUp","status":"passed","stage":"finished","description":"","steps":[],"attachments":[],"parameters":[],"start":1628948021740,"stop":1628948031289}],"afters":[],"links":[],"start":1628948021425,"stop":1628948041629}

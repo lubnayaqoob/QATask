@@ -1,6 +1,7 @@
 package com.qa.qatask.testCASES;
 
 
+import com.qa.qatask.allureReport.TestAllureListener;
 import com.qa.qatask.base.TestBase;
 import com.qa.qatask.pages.Dashboard;
 import io.qameta.allure.Description;
@@ -10,9 +11,10 @@ import io.qameta.allure.Story;
 import org.testng.Assert;
 import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeTest;
+import org.testng.annotations.Listeners;
 import org.testng.annotations.Test;
 
-
+@Listeners({TestAllureListener.class})
 public class DashboardTest extends TestBase {
 
 
@@ -103,14 +105,14 @@ public class DashboardTest extends TestBase {
         Assert.assertTrue(res_clearFilter);
     }
 
-    @Test(priority = 10, description = "clear all filters")
+    @Test(priority = 10, description = "verify if radio button  from sort list is clicked on Low to High price")
     @Severity(SeverityLevel.NORMAL)
     public void verify_sortByPriceClick() {
         Boolean res_sortByPriceClick =  dashboard.sortByPriceClick();
         Assert.assertTrue(res_sortByPriceClick);
     }
 
-    @Test(priority = 11, description = "select price range")
+    @Test(priority = 11, description = "verify if the prices are sorted by Low to high")
     @Severity(SeverityLevel.NORMAL)
     public void verify_isSortedByLowToHigh() throws InterruptedException {
         Boolean res_isSortedByLowToHigh  = dashboard.isSortedByLowToHigh();
@@ -125,13 +127,13 @@ public class DashboardTest extends TestBase {
         Assert.assertTrue(res_clickPrice);
     }
 
-    @Test(priority = 13, description = "select price range")
+    @Test(priority = 13, description = "select price range two values from and to")
     @Severity(SeverityLevel.NORMAL)
     public void verify_selectPriceRange() {
         dashboard.selectPriceRange();
     }
 
-    @Test(priority = 14, description = "select price range")
+    @Test(priority = 14, description = "verify if items are with in defined price range")
     @Severity(SeverityLevel.NORMAL)
     public void verify_itemsWithInpriceRangeData() throws InterruptedException {
         Boolean res_itemsWithInpriceRangeData  = dashboard.itemsWithInpriceRangeData();
