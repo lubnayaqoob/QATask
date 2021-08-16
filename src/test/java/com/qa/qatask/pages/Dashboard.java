@@ -124,9 +124,26 @@ public class Dashboard extends TestBase {
     }
 
     //Nike text present
-    public Boolean NikeTextPresent() {
-        driver.getPageSource().contains("Nike");
-        return true;
+    public Boolean isNikeTextPresent(String text) {
+         try{
+            boolean b = driver.getPageSource().contains(text);
+            return b;
+        }
+        catch(Exception e){
+            return false;
+        }
+    }
+
+
+
+    protected boolean isTextPresent(String text){
+        try{
+            boolean b = driver.getPageSource().contains(text);
+            return b;
+        }
+        catch(Exception e){
+            return false;
+        }
     }
 
     //click on dropdown list and select  and click price filter
@@ -144,20 +161,31 @@ public class Dashboard extends TestBase {
         return true;
     }
 
-    public Boolean sortByPrice() {
+    public Boolean sortByPriceClick() {
         we_sortBy.click();
         List<WebElement> priceList = driver.findElements(By.xpath("//ul[@class=\"pile\"]"));
         for (WebElement element : priceList) {
             if (element.getText().contains("Price: Low to High")) {
-                element.click();
-            }
+                try {
+                    element.click();
+                    return true;
+                } catch (WebDriverException e) {
+                    e.printStackTrace();
+                    return false;
+                }
+           }
         }
         return true;
     }
 
     public Boolean selectPrice() {
-        we_price.click();
-        return true;
+        try {
+            we_price.click();
+            return true;
+        } catch (WebDriverException e) {
+            e.printStackTrace();
+            return false;
+        }
     }
 
 
@@ -188,7 +216,6 @@ public class Dashboard extends TestBase {
         System.out.println("verifyIfResultTrue" + verifyIfResultTrue);
         return verifyIfResultTrue;
     }
-
 
     private static boolean inRange(List<Float> list, float min, float max) {
         return list.stream().allMatch(i -> i >= min && i <= max);

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="TestSuite" time="37.6" tests="12" errors="0" skipped="0" failures="0">
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="TestSuite" time="38.501" tests="12" errors="0" skipped="0" failures="0">
   <properties>
     <property name="java.specification.version" value="16"/>
     <property name="sun.cpu.isalist" value="amd64"/>
@@ -15,7 +15,7 @@
     <property name="sun.java.launcher" value="SUN_STANDARD"/>
     <property name="user.country" value="GB"/>
     <property name="sun.boot.library.path" value="C:\Program Files\Java\jdk-16.0.2\bin"/>
-    <property name="sun.java.command" value="C:\Users\LUBNAY~1\AppData\Local\Temp\surefire11222362954492531079\surefirebooter12984989816783484797.jar C:\Users\Lubna Yaqoob\AppData\Local\Temp\surefire11222362954492531079 2021-08-16T11-36-36_784-jvmRun1 surefire3083240471515234221tmp surefire_014891449669488782324tmp"/>
+    <property name="sun.java.command" value="C:\Users\LUBNAY~1\AppData\Local\Temp\surefire15152723373623002752\surefirebooter5782875203879528327.jar C:\Users\Lubna Yaqoob\AppData\Local\Temp\surefire15152723373623002752 2021-08-16T11-54-37_119-jvmRun1 surefire10906078819706557391tmp surefire_04159309718334997793tmp"/>
     <property name="jdk.debug" value="release"/>
     <property name="surefire.test.class.path" value="C:\Users\Lubna Yaqoob\Downloads\QATask\target\test-classes;C:\Users\Lubna Yaqoob\Downloads\QATask\target\classes;C:\Users\Lubna Yaqoob\.m2\repository\org\seleniumhq\selenium\selenium-java\3.141.59\selenium-java-3.141.59.jar;C:\Users\Lubna Yaqoob\.m2\repository\org\seleniumhq\selenium\selenium-api\3.141.59\selenium-api-3.141.59.jar;C:\Users\Lubna Yaqoob\.m2\repository\org\seleniumhq\selenium\selenium-chrome-driver\3.141.59\selenium-chrome-driver-3.141.59.jar;C:\Users\Lubna Yaqoob\.m2\repository\org\seleniumhq\selenium\selenium-edge-driver\3.141.59\selenium-edge-driver-3.141.59.jar;C:\Users\Lubna Yaqoob\.m2\repository\org\seleniumhq\selenium\selenium-firefox-driver\3.141.59\selenium-firefox-driver-3.141.59.jar;C:\Users\Lubna Yaqoob\.m2\repository\org\seleniumhq\selenium\selenium-ie-driver\3.141.59\selenium-ie-driver-3.141.59.jar;C:\Users\Lubna Yaqoob\.m2\repository\org\seleniumhq\selenium\selenium-opera-driver\3.141.59\selenium-opera-driver-3.141.59.jar;C:\Users\Lubna Yaqoob\.m2\repository\org\seleniumhq\selenium\selenium-remote-driver\3.141.59\selenium-remote-driver-3.141.59.jar;C:\Users\Lubna Yaqoob\.m2\repository\org\seleniumhq\selenium\selenium-safari-driver\3.141.59\selenium-safari-driver-3.141.59.jar;C:\Users\Lubna Yaqoob\.m2\repository\org\seleniumhq\selenium\selenium-support\3.141.59\selenium-support-3.141.59.jar;C:\Users\Lubna Yaqoob\.m2\repository\net\bytebuddy\byte-buddy\1.8.15\byte-buddy-1.8.15.jar;C:\Users\Lubna Yaqoob\.m2\repository\org\apache\commons\commons-exec\1.3\commons-exec-1.3.jar;C:\Users\Lubna Yaqoob\.m2\repository\com\google\guava\guava\25.0-jre\guava-25.0-jre.jar;C:\Users\Lubna Yaqoob\.m2\repository\com\google\code\findbugs\jsr305\1.3.9\jsr305-1.3.9.jar;C:\Users\Lubna Yaqoob\.m2\repository\org\checkerframework\checker-compat-qual\2.0.0\checker-compat-qual-2.0.0.jar;C:\Users\Lubna Yaqoob\.m2\repository\com\google\errorprone\error_prone_annotations\2.1.3\error_prone_annotations-2.1.3.jar;C:\Users\Lubna Yaqoob\.m2\repository\com\google\j2objc\j2objc-annotations\1.1\j2objc-annotations-1.1.jar;C:\Users\Lubna Yaqoob\.m2\repository\org\codehaus\mojo\animal-sniffer-annotations\1.14\animal-sniffer-annotations-1.14.jar;C:\Users\Lubna Yaqoob\.m2\repository\com\squareup\okhttp3\okhttp\3.11.0\okhttp-3.11.0.jar;C:\Users\Lubna Yaqoob\.m2\repository\com\squareup\okio\okio\1.14.0\okio-1.14.0.jar;C:\Users\Lubna Yaqoob\.m2\repository\io\qameta\allure\allure-testng\2.14.0\allure-testng-2.14.0.jar;C:\Users\Lubna Yaqoob\.m2\repository\io\qameta\allure\allure-java-commons\2.14.0\allure-java-commons-2.14.0.jar;C:\Users\Lubna Yaqoob\.m2\repository\io\qameta\allure\allure-model\2.14.0\allure-model-2.14.0.jar;C:\Users\Lubna Yaqoob\.m2\repository\com\fasterxml\jackson\core\jackson-databind\2.12.3\jackson-databind-2.12.3.jar;C:\Users\Lubna Yaqoob\.m2\repository\com\fasterxml\jackson\core\jackson-annotations\2.12.3\jackson-annotations-2.12.3.jar;C:\Users\Lubna Yaqoob\.m2\repository\com\fasterxml\jackson\core\jackson-core\2.12.3\jackson-core-2.12.3.jar;C:\Users\Lubna Yaqoob\.m2\repository\org\apache\tika\tika-core\1.26\tika-core-1.26.jar;C:\Users\Lubna Yaqoob\.m2\repository\javax\xml\bind\jaxb-api\2.3.1\jaxb-api-2.3.1.jar;C:\Users\Lubna Yaqoob\.m2\repository\javax\activation\javax.activation-api\1.2.0\javax.activation-api-1.2.0.jar;C:\Users\Lubna Yaqoob\.m2\repository\javax\activation\activation\1.1.1\activation-1.1.1.jar;C:\Users\Lubna Yaqoob\.m2\repository\org\jooq\joor-java-8\0.9.14\joor-java-8-0.9.14.jar;C:\Users\Lubna Yaqoob\.m2\repository\io\qameta\allure\allure-test-filter\2.14.0\allure-test-filter-2.14.0.jar;C:\Users\Lubna Yaqoob\.m2\repository\io\github\bonigarcia\webdrivermanager\4.4.3\webdrivermanager-4.4.3.jar;C:\Users\Lubna Yaqoob\.m2\repository\org\slf4j\slf4j-api\1.7.30\slf4j-api-1.7.30.jar;C:\Users\Lubna Yaqoob\.m2\repository\commons-io\commons-io\2.8.0\commons-io-2.8.0.jar;C:\Users\Lubna Yaqoob\.m2\repository\com\google\code\gson\gson\2.8.6\gson-2.8.6.jar;C:\Users\Lubna Yaqoob\.m2\repository\org\apache\commons\commons-lang3\3.12.0\commons-lang3-3.12.0.jar;C:\Users\Lubna Yaqoob\.m2\repository\org\apache\httpcomponents\client5\httpclient5\5.0.3\httpclient5-5.0.3.jar;C:\Users\Lubna Yaqoob\.m2\repository\org\apache\httpcomponents\core5\httpcore5\5.0.2\httpcore5-5.0.2.jar;C:\Users\Lubna Yaqoob\.m2\repository\org\apache\httpcomponents\core5\httpcore5-h2\5.0.2\httpcore5-h2-5.0.2.jar;C:\Users\Lubna Yaqoob\.m2\repository\commons-codec\commons-codec\1.13\commons-codec-1.13.jar;C:\Users\Lubna Yaqoob\.m2\repository\org\rauschig\jarchivelib\1.1.0\jarchivelib-1.1.0.jar;C:\Users\Lubna Yaqoob\.m2\repository\org\apache\commons\commons-compress\1.20\commons-compress-1.20.jar;C:\Users\Lubna Yaqoob\.m2\repository\org\jsoup\jsoup\1.13.1\jsoup-1.13.1.jar;C:\Users\Lubna Yaqoob\.m2\repository\org\hamcrest\hamcrest\2.2\hamcrest-2.2.jar;C:\Users\Lubna Yaqoob\.m2\repository\org\assertj\assertj-core\3.19.0\assertj-core-3.19.0.jar;C:\Users\Lubna Yaqoob\.m2\repository\org\testng\testng\7.4.0\testng-7.4.0.jar;C:\Users\Lubna Yaqoob\.m2\repository\com\beust\jcommander\1.78\jcommander-1.78.jar;C:\Users\Lubna Yaqoob\.m2\repository\org\webjars\jquery\3.5.1\jquery-3.5.1.jar;C:\Users\Lubna Yaqoob\.m2\repository\org\slf4j\slf4j-simple\1.7.30\slf4j-simple-1.7.30.jar;"/>
     <property name="allure.results.directory" value="C:\Users\Lubna Yaqoob\Downloads\QATask\target/allure-results"/>
@@ -31,7 +31,7 @@
     <property name="line.separator" value="&#10;"/>
     <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
     <property name="java.specification.name" value="Java Platform API Specification"/>
-    <property name="surefire.real.class.path" value="C:\Users\LUBNAY~1\AppData\Local\Temp\surefire11222362954492531079\surefirebooter12984989816783484797.jar"/>
+    <property name="surefire.real.class.path" value="C:\Users\LUBNAY~1\AppData\Local\Temp\surefire15152723373623002752\surefirebooter5782875203879528327.jar"/>
     <property name="user.script" value=""/>
     <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
     <property name="java.runtime.version" value="16.0.2+7-67"/>
@@ -57,16 +57,16 @@
     <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
     <property name="java.class.version" value="60.0"/>
   </properties>
-  <testcase name="verifycloseportal" classname="com.qa.qatask.testCASES.DashboardTest" time="0.428"/>
-  <testcase name="verifyTitle" classname="com.qa.qatask.testCASES.DashboardTest" time="0.014"/>
-  <testcase name="verifyacceptCookies" classname="com.qa.qatask.testCASES.DashboardTest" time="0.367"/>
-  <testcase name="verifySearch" classname="com.qa.qatask.testCASES.DashboardTest" time="0.317"/>
-  <testcase name="verifyclickNike" classname="com.qa.qatask.testCASES.DashboardTest" time="3.82"/>
-  <testcase name="verifyNikeTextPresent" classname="com.qa.qatask.testCASES.DashboardTest" time="0.727"/>
-  <testcase name="verifyselectWomenShoes" classname="com.qa.qatask.testCASES.DashboardTest" time="4.546"/>
-  <testcase name="verifyclearFilter" classname="com.qa.qatask.testCASES.DashboardTest" time="5.408"/>
-  <testcase name="verifysortByPrice" classname="com.qa.qatask.testCASES.DashboardTest" time="0.881"/>
-  <testcase name="verifyrespones_selectPrice" classname="com.qa.qatask.testCASES.DashboardTest" time="0.271"/>
-  <testcase name="verifyrespones_selectPriceRange" classname="com.qa.qatask.testCASES.DashboardTest" time="0.338"/>
-  <testcase name="verifyitemsWithInpriceRangeData" classname="com.qa.qatask.testCASES.DashboardTest" time="5.577"/>
+  <testcase name="verify_closeportal" classname="com.qa.qatask.testCASES.DashboardTest" time="0.83"/>
+  <testcase name="verify_Title" classname="com.qa.qatask.testCASES.DashboardTest" time="0.018"/>
+  <testcase name="verify_acceptCookies" classname="com.qa.qatask.testCASES.DashboardTest" time="0.4"/>
+  <testcase name="verify_search" classname="com.qa.qatask.testCASES.DashboardTest" time="0.248"/>
+  <testcase name="verify_clickNike" classname="com.qa.qatask.testCASES.DashboardTest" time="3.251"/>
+  <testcase name="verify_isNikeTextPresent" classname="com.qa.qatask.testCASES.DashboardTest" time="0.629"/>
+  <testcase name="verify_selectWomenShoes" classname="com.qa.qatask.testCASES.DashboardTest" time="3.375"/>
+  <testcase name="verify_clearFilter" classname="com.qa.qatask.testCASES.DashboardTest" time="5.374"/>
+  <testcase name="verify_sortByPriceClick" classname="com.qa.qatask.testCASES.DashboardTest" time="0.688"/>
+  <testcase name="verify_selectPrice" classname="com.qa.qatask.testCASES.DashboardTest" time="0.349"/>
+  <testcase name="verify_selectPriceRange" classname="com.qa.qatask.testCASES.DashboardTest" time="0.186"/>
+  <testcase name="verify_itemsWithInpriceRangeData" classname="com.qa.qatask.testCASES.DashboardTest" time="5.818"/>
 </testsuite>

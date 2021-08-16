@@ -32,23 +32,23 @@ public class DashboardTest extends TestBase {
     @Description("Test Case Description : Verify portal is closed when clicked ")
     @Severity(SeverityLevel.NORMAL)
     @Story("Story Name : Select or close portal")
-    public void verifycloseportal() {
-        Boolean result_closeportal = dashboard.closetPortal();
-        Assert.assertTrue(result_closeportal );
+    public void verify_closeportal() {
+        Boolean res_closeportal = dashboard.closetPortal();
+        Assert.assertTrue(res_closeportal );
     }
 
     @Test(enabled = false, description = "select a portal 'united kingdom'")
     @Severity(SeverityLevel.NORMAL)
-    public void verifySelectPortal() {
-        Boolean result_selectPortal = dashboard.selectPortal();
-        Assert.assertTrue(result_selectPortal);
+    public void verify_selectPortal() {
+        Boolean res_selectPortal = dashboard.selectPortal();
+        Assert.assertTrue(res_selectPortal);
     }
 
     @Test(priority = 3, description = "verify title page test -- warm up test")
     @Severity(SeverityLevel.MINOR)
     @Story("Story Name : Verify Title")
     @Description("Story Name : verify title page")
-    public void verifyTitle() {
+    public void verify_Title() {
         String actualTitle = dashboard.title();
         String expectedTitle = "Vinted | Sell and buy clothes, shoes and accessories";
         Assert.assertEquals(expectedTitle, actualTitle);
@@ -58,16 +58,16 @@ public class DashboardTest extends TestBase {
     @Description("Verify accept cookies")
     @Severity(SeverityLevel.MINOR)
     @Story("Story : Manage Cookies")
-    public void verifyacceptCookies() {
-        Boolean result = dashboard.acceptCookies();
-        Assert.assertTrue(result);
+    public void verify_acceptCookies() {
+        Boolean res_acceptCookies = dashboard.acceptCookies();
+        Assert.assertTrue(res_acceptCookies);
     }
 
     @Test(priority = 5, description = "verify search input field contains string 'Nik'")
     @Description("verify search input field contains string 'Nik'")
     @Story("Story : Search Items")
     @Severity(SeverityLevel.BLOCKER)
-    public void verifySearch() {
+    public void verify_search() {
         dashboard.search();
     }
 
@@ -75,44 +75,45 @@ public class DashboardTest extends TestBase {
     @Description("verify Nike text is clicked from options available list")
     @Severity(SeverityLevel.NORMAL)
     @Story("Story : Search Items")
-    public void verifyclickNike() {
-       Boolean val =  dashboard.clickNike();
-        Assert.assertTrue(val);
+    public void verify_clickNike() {
+       Boolean res_clickNike =  dashboard.clickNike();
+        Assert.assertTrue(res_clickNike);
     }
 
     @Test(priority = 7, description = "verify Text is present on page with Nike")
     @Description("verify Nike text is clicked from options available list")
     @Severity(SeverityLevel.NORMAL)
     @Story("Story : Search Items")
-    public void verifyNikeTextPresent() {
-        Boolean res_NikeTextPresent = dashboard.NikeTextPresent();
-        Assert.assertEquals(true, true);
+    public void verify_isNikeTextPresent() {
+        Boolean res_isNikeTextPresent = dashboard.isNikeTextPresent("Nike");
+        Assert.assertTrue(res_isNikeTextPresent);
     }
 
     @Test(priority = 8, description = "Assert that “Nike” filter appeared below the filter menu")
     @Severity(SeverityLevel.NORMAL)
-    public void verifyselectWomenShoes() {
+    public void verify_selectWomenShoes() {
         dashboard.selectWomenShoes();
+
         Assert.assertEquals(true, true);
     }
 
     @Test(priority = 9, description = "clear all filters")
     @Severity(SeverityLevel.NORMAL)
-    public void verifyclearFilter() throws InterruptedException {
+    public void verify_clearFilter() throws InterruptedException {
         dashboard.clearFilter();
         Assert.assertEquals(true, true);
     }
 
     @Test(priority = 10, description = "clear all filters")
     @Severity(SeverityLevel.NORMAL)
-    public void verifysortByPrice() {
-        dashboard.sortByPrice();
+    public void verify_sortByPriceClick() {
+        dashboard.sortByPriceClick();
         Assert.assertEquals(true, true);
     }
 
     @Test(priority = 11, description = "click on price dropdown")
     @Severity(SeverityLevel.NORMAL)
-    public void verifyrespones_selectPrice() {
+    public void verify_selectPrice() {
         dashboard.selectPrice();
         Assert.assertEquals(true, true);
     }
@@ -120,27 +121,22 @@ public class DashboardTest extends TestBase {
 
     @Test(priority = 12, description = "select price range")
     @Severity(SeverityLevel.NORMAL)
-    public void verifyrespones_selectPriceRange() {
+    public void verify_selectPriceRange() {
         dashboard.selectPriceRange();
         Assert.assertEquals(true, true);
     }
 
     @Test(priority = 13, description = "select price range")
     @Severity(SeverityLevel.NORMAL)
-    public void verifyitemsWithInpriceRangeData() throws InterruptedException {
+    public void verify_itemsWithInpriceRangeData() throws InterruptedException {
         dashboard.itemsWithInpriceRangeData();
         Assert.assertEquals(true, true);
     }
 
-
-
-
-
-
-   /*@AfterTest
+@AfterTest
     public void quitBrowserTest() {
        tearDown();
    }
-*/
+
 
 }
