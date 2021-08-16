@@ -20,7 +20,7 @@ Test-It Allure Annotations
 
 The maven project is built with```Pom.xml```  that contains all the dependencies run the program
 * TestNG library is to use because Annotations are easy to understand, also it allows executing test cases based on group which isn't possible in JUnit
-
+* configurations for change browser or url is placed in config file located on the path ``src/test/java/com/qa/qatask/config/config.properties``
 
 
 ## Execute Program 

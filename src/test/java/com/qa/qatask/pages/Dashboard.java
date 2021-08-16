@@ -134,31 +134,29 @@ public class Dashboard extends TestBase {
         }
     }
 
-
-
-    protected boolean isTextPresent(String text){
+    //click on dropdown list and select  and click price filter
+    public Boolean selectWomenShoes() {
         try{
-            boolean b = driver.getPageSource().contains(text);
-            return b;
+            we_women.click();
+            we_womenShoes.click();
+            we_womenShoesHeels.click();
+            we_womenShoesHeelsHighHeels.click();
+            return true;
         }
         catch(Exception e){
             return false;
         }
     }
 
-    //click on dropdown list and select  and click price filter
-    public Boolean selectWomenShoes() {
-        we_women.click();
-        we_womenShoes.click();
-        we_womenShoesHeels.click();
-        we_womenShoesHeelsHighHeels.click();
-        return true;
-    }
-
     public Boolean clearFilter() throws InterruptedException {
         Thread.sleep(5000);
-        we_clearFilter.click();
-        return true;
+        try{
+            we_clearFilter.click();
+            return true;
+        }
+        catch(Exception e){
+            return false;
+        }
     }
 
     public Boolean sortByPriceClick() {

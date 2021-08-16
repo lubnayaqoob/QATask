@@ -92,23 +92,22 @@ public class DashboardTest extends TestBase {
     @Test(priority = 8, description = "Assert that “Nike” filter appeared below the filter menu")
     @Severity(SeverityLevel.NORMAL)
     public void verify_selectWomenShoes() {
-        dashboard.selectWomenShoes();
-
-        Assert.assertEquals(true, true);
+        Boolean res_selectWomenShoes = dashboard.selectWomenShoes();
+        Assert.assertTrue(res_selectWomenShoes);
     }
 
     @Test(priority = 9, description = "clear all filters")
     @Severity(SeverityLevel.NORMAL)
     public void verify_clearFilter() throws InterruptedException {
-        dashboard.clearFilter();
-        Assert.assertEquals(true, true);
+        Boolean res_clearFilter =  dashboard.clearFilter();
+        Assert.assertTrue(res_clearFilter);
     }
 
     @Test(priority = 10, description = "clear all filters")
     @Severity(SeverityLevel.NORMAL)
     public void verify_sortByPriceClick() {
-        dashboard.sortByPriceClick();
-        Assert.assertEquals(true, true);
+        Boolean res_sortByPriceClick =  dashboard.sortByPriceClick();
+        Assert.assertTrue(res_sortByPriceClick);
     }
 
     @Test(priority = 11, description = "click on price dropdown")
@@ -117,7 +116,6 @@ public class DashboardTest extends TestBase {
         dashboard.selectPrice();
         Assert.assertEquals(true, true);
     }
-
 
     @Test(priority = 12, description = "select price range")
     @Severity(SeverityLevel.NORMAL)
