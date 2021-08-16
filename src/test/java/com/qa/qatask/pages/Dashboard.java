@@ -6,6 +6,7 @@ import org.openqa.selenium.WebDriverException;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
+import org.testng.Assert;
 
 
 import java.util.ArrayList;
@@ -200,22 +201,51 @@ public class Dashboard extends TestBase {
         we_getOutOfPriceDiv.click();
 
         Thread.sleep(5000);
-        List<WebElement> itemsWithInPriceRange = driver.findElements(By.xpath("//div[@class=\"ItemBox_title__2FmDy\"]//div/descendant::h3[@class='Text_text__QBn4- Text_subtitle__1I9iB Text_left__3s3CR Text_amplified__2ccjx Text_bold__1scEZ']"));
+        List<WebElement> price = driver.findElements(By.xpath("//div[@class=\"ItemBox_title__2FmDy\"]//div/descendant::h3[@class='Text_text__QBn4- Text_subtitle__1I9iB Text_left__3s3CR Text_amplified__2ccjx Text_bold__1scEZ']"));
         List<Float> all_elements_text = new ArrayList<Float>();
 
-        for (int i = 0; i < itemsWithInPriceRange.size(); i++) {
-            //loading text of each element in to array all_elements_text
-            String value = (itemsWithInPriceRange.get(i).getText());
+        for (int i = 0; i < price.size(); i++) {
+            String value = (price.get(i).getText());
             value = value.replace("£", "");
+            System.out.println( "value ---price range--" + value);
             all_elements_text.add(Float.parseFloat(value));
         }
         Boolean verifyIfResultTrue = inRange(all_elements_text, Float.parseFloat(priceFrom), Float.parseFloat((priceTo)));
-        System.out.println("verifyIfResultTrue" + verifyIfResultTrue);
+        System.out.println("verifyIfResultTrue ----" + verifyIfResultTrue);
         return verifyIfResultTrue;
     }
 
     private static boolean inRange(List<Float> list, float min, float max) {
         return list.stream().allMatch(i -> i >= min && i <= max);
+    }
+
+
+
+
+    public Boolean isSortedByLowToHigh() throws InterruptedException {
+        Thread.sleep(5000);
+        List<WebElement> price = driver.findElements(By.xpath("//div[@class=\"ItemBox_title__2FmDy\"]//div/descendant::h3[@class='Text_text__QBn4- Text_subtitle__1I9iB Text_left__3s3CR Text_amplified__2ccjx Text_bold__1scEZ']"));
+        List<Float> all_elements_text = new ArrayList<Float>();
+
+        for (int i = 0; i < price.size(); i++) {
+            String value = (price.get(i).getText());
+            value = value.replace("£", "");
+            System.out.println( "value ---price low to high--" + value);
+            all_elements_text.add(Float.parseFloat(value));
+        }
+        if(!ascendingCheck((ArrayList<Float>) all_elements_text)){
+            Assert.fail("Not in ascending order");
+        }
+        return false;
+    }
+
+    Boolean ascendingCheck(ArrayList<Float> data){
+        for (int i = 0; i < data.size()-1; i++) {
+            if (data.get(i) > data.get(i+1)) {
+                return false;
+            }
+        }
+        return true;
     }
 
 

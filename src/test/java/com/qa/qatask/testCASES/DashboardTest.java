@@ -110,25 +110,34 @@ public class DashboardTest extends TestBase {
         Assert.assertTrue(res_sortByPriceClick);
     }
 
-    @Test(priority = 11, description = "click on price dropdown")
+    @Test(priority = 11, description = "select price range")
+    @Severity(SeverityLevel.NORMAL)
+    public void verify_isSortedByLowToHigh() throws InterruptedException {
+        Boolean res_isSortedByLowToHigh  = dashboard.isSortedByLowToHigh();
+        Assert.assertTrue(res_isSortedByLowToHigh);
+    }
+
+
+    @Test(priority = 12, description = "click on price dropdown")
     @Severity(SeverityLevel.NORMAL)
     public void verify_clickPrice() {
         Boolean res_clickPrice = dashboard.clickPrice();
         Assert.assertTrue(res_clickPrice);
     }
 
-    @Test(priority = 12, description = "select price range")
+    @Test(priority = 13, description = "select price range")
     @Severity(SeverityLevel.NORMAL)
     public void verify_selectPriceRange() {
         dashboard.selectPriceRange();
     }
 
-    @Test(priority = 13, description = "select price range")
+    @Test(priority = 14, description = "select price range")
     @Severity(SeverityLevel.NORMAL)
     public void verify_itemsWithInpriceRangeData() throws InterruptedException {
         Boolean res_itemsWithInpriceRangeData  = dashboard.itemsWithInpriceRangeData();
         Assert.assertTrue(res_itemsWithInpriceRangeData);
     }
+
 
 @AfterTest
     public void quitBrowserTest() {
