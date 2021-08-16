@@ -1,15 +1,2 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite name="Functional Test Suite" verbose="5"  >
-
-
-    <listeners>
-        <listener class-name="com.qa.qatask.allureReport.TestAllureListener" />
-    </listeners>
-
-    <test name = "QA Task Vinted" verbose="5" preserve-order="true">
-        <classes>
-            <class name="com.qa.qatask.testCASES.DashboardTest"/><!-- close tag is redundant here-->
-        </classes>
-    </test>
-</suite>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd"><suite name="All Test Suite"><test verbose="2" preserve-order="true" name="C:/Users/Lubna Yaqoob/Downloads/QATask/README.md"><classes/></test></suite>

@@ -1,20 +1,20 @@
 -------------------------------------------------------------------------------
 Test set: TestSuite
 -------------------------------------------------------------------------------
-Tests run: 26, Failures: 4, Errors: 0, Skipped: 0, Time elapsed: 103.631 s <<< FAILURE! - in TestSuite
-verify_isSortedByLowToHigh(com.qa.qatask.testCASES.DashboardTest)  Time elapsed: 5.664 s  <<< FAILURE!
+Tests run: 26, Failures: 4, Errors: 0, Skipped: 0, Time elapsed: 116.463 s <<< FAILURE! - in TestSuite
+verify_isSortedByLowToHigh(com.qa.qatask.testCASES.DashboardTest)  Time elapsed: 5.798 s  <<< FAILURE!
 java.lang.AssertionError: Not in ascending order
-	at com.qa.qatask.testCASES.DashboardTest.verify_isSortedByLowToHigh(DashboardTest.java:118)
+	at com.qa.qatask.testCASES.DashboardTest.verify_isSortedByLowToHigh(DashboardTest.java:126)
 
-verify_itemsWithInpriceRangeData(com.qa.qatask.testCASES.DashboardTest)  Time elapsed: 5.713 s  <<< FAILURE!
+verify_itemsWithInpriceRangeData(com.qa.qatask.testCASES.DashboardTest)  Time elapsed: 6.043 s  <<< FAILURE!
 java.lang.AssertionError: expected [true] but found [false]
-	at com.qa.qatask.testCASES.DashboardTest.verify_itemsWithInpriceRangeData(DashboardTest.java:140)
+	at com.qa.qatask.testCASES.DashboardTest.verify_itemsWithInpriceRangeData(DashboardTest.java:154)
 
-verify_isSortedByLowToHigh(com.qa.qatask.testCASES.DashboardTest)  Time elapsed: 5.431 s  <<< FAILURE!
+verify_isSortedByLowToHigh(com.qa.qatask.testCASES.DashboardTest)  Time elapsed: 6.884 s  <<< FAILURE!
 java.lang.AssertionError: Not in ascending order
-	at com.qa.qatask.testCASES.DashboardTest.verify_isSortedByLowToHigh(DashboardTest.java:118)
+	at com.qa.qatask.testCASES.DashboardTest.verify_isSortedByLowToHigh(DashboardTest.java:126)
 
-verify_itemsWithInpriceRangeData(com.qa.qatask.testCASES.DashboardTest)  Time elapsed: 5.71 s  <<< FAILURE!
+verify_itemsWithInpriceRangeData(com.qa.qatask.testCASES.DashboardTest)  Time elapsed: 7.935 s  <<< FAILURE!
 java.lang.AssertionError: expected [true] but found [false]
-	at com.qa.qatask.testCASES.DashboardTest.verify_itemsWithInpriceRangeData(DashboardTest.java:140)
+	at com.qa.qatask.testCASES.DashboardTest.verify_itemsWithInpriceRangeData(DashboardTest.java:154)
 

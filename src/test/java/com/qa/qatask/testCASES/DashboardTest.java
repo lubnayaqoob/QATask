@@ -92,6 +92,8 @@ public class DashboardTest extends TestBase {
     }
 
     @Test(priority = 8, description = "Assert that “Nike” filter appeared below the filter menu")
+    @Description("Assert that “Nike” filter appeared below the filter menu")
+    @Story("Story : Select Women Shoes")
     @Severity(SeverityLevel.NORMAL)
     public void verify_selectWomenShoes() {
         Boolean res_selectWomenShoes = dashboard.selectWomenShoes();
@@ -99,6 +101,8 @@ public class DashboardTest extends TestBase {
     }
 
     @Test(priority = 9, description = "clear all filters")
+    @Description("clear all filters")
+    @Story("Story : Clear all filters")
     @Severity(SeverityLevel.NORMAL)
     public void verify_clearFilter() throws InterruptedException {
         Boolean res_clearFilter =  dashboard.clearFilter();
@@ -106,6 +110,8 @@ public class DashboardTest extends TestBase {
     }
 
     @Test(priority = 10, description = "verify if radio button  from sort list is clicked on Low to High price")
+    @Description("verify if radio button  from sort list is clicked on Low to High price")
+    @Story("Story : Sort by Price")
     @Severity(SeverityLevel.NORMAL)
     public void verify_sortByPriceClick() {
         Boolean res_sortByPriceClick =  dashboard.sortByPriceClick();
@@ -113,6 +119,8 @@ public class DashboardTest extends TestBase {
     }
 
     @Test(priority = 11, description = "verify if the prices are sorted by Low to high")
+    @Description("verify if the prices are sorted by Low to high")
+    @Story("Story : Sort by Price")
     @Severity(SeverityLevel.NORMAL)
     public void verify_isSortedByLowToHigh() throws InterruptedException {
         Boolean res_isSortedByLowToHigh  = dashboard.isSortedByLowToHigh();
@@ -120,7 +128,9 @@ public class DashboardTest extends TestBase {
     }
 
 
-    @Test(priority = 12, description = "click on price dropdown")
+    @Test(priority = 12, description = "verify click on price dropdown")
+    @Description("verify click on price dropdown")
+    @Story("Story : Filter by price range")
     @Severity(SeverityLevel.NORMAL)
     public void verify_clickPrice() {
         Boolean res_clickPrice = dashboard.clickPrice();
@@ -128,12 +138,16 @@ public class DashboardTest extends TestBase {
     }
 
     @Test(priority = 13, description = "select price range two values from and to")
+    @Description("select price range two values from and to")
+    @Story("Story : Filter by price range")
     @Severity(SeverityLevel.NORMAL)
     public void verify_selectPriceRange() {
         dashboard.selectPriceRange();
     }
 
     @Test(priority = 14, description = "verify if items are with in defined price range")
+    @Description("verify if items are with in defined price range")
+    @Story("Story : Filter by price range")
     @Severity(SeverityLevel.NORMAL)
     public void verify_itemsWithInpriceRangeData() throws InterruptedException {
         Boolean res_itemsWithInpriceRangeData  = dashboard.itemsWithInpriceRangeData();

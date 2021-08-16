@@ -7,7 +7,7 @@ Implementation /verification of Vinted e-commerce website test cases
 Use a JDK 16 and Eclipse to implement this project 
 * Steps to run this prject
 ```
-Install JDK 16
+Install JDK 16.02
 Install  IntelliJ
 ```
 
