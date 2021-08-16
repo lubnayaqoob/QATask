@@ -10,6 +10,14 @@ Use a JDK 16 and Eclipse to implement this project
 Install JDK 16
 Install  IntelliJ
 ```
+
+* Plugins Required : if IntelliJ does not auto support plugins, please install 
+```
+Allure Report Plugin
+Test-It Allure Annotations
+```
+
+
 The maven project is built with```Pom.xml```  that contains all the dependencies run the program
 * TestNG library is to use because Annotations are easy to understand, also it allows executing test cases based on group which isn't possible in JUnit
 
