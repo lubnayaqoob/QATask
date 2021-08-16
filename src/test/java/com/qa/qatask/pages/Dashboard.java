@@ -2,15 +2,14 @@ package com.qa.qatask.pages;
 
 import com.qa.qatask.base.TestBase;
 import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriverException;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
 
 import java.util.ArrayList;
-import java.util.Arrays;
 import java.util.List;
-import java.util.concurrent.TimeUnit;
 
 public class Dashboard extends TestBase {
 
@@ -18,7 +17,7 @@ public class Dashboard extends TestBase {
     WebElement we_acceptCookies;
 
     @FindBy(xpath = "//div[@data-icon-name='x']")
-    WebElement we_closeDialog;
+    WebElement we_closePortal;
 
     @FindBy(xpath = "//div[@role='dialog']//div/descendant::span[contains(text(),'United Kingdom')]")
     WebElement we_portal;
@@ -75,20 +74,36 @@ public class Dashboard extends TestBase {
 
     //select Portal
     public Boolean selectPortal() {
-        we_portal.click();
-        return true;
+        try {
+            we_portal.click();
+            return true;
+        } catch (WebDriverException e) {
+            e.printStackTrace();
+            return false;
+        }
     }
 
     //close Portal
     public Boolean closetPortal() {
-        we_closeDialog.click();
-        return true;
+        try {
+            we_closePortal.click();
+            return true;
+        } catch (WebDriverException e) {
+            e.printStackTrace();
+            return false;
+        }
+
     }
 
     //accept all cookies
     public Boolean acceptCookies() {
-        we_acceptCookies.click();
-        return true;
+        try {
+            we_acceptCookies.click();
+            return true;
+        } catch (WebDriverException e) {
+            e.printStackTrace();
+            return false;
+        }
 
     }
 
@@ -99,8 +114,13 @@ public class Dashboard extends TestBase {
 
     //click on 'Nike'
     public Boolean clickNike() {
-        we_clickNike.click();
-        return true;
+        try {
+            we_clickNike.click();
+            return true;
+        } catch (WebDriverException e) {
+            e.printStackTrace();
+            return false;
+        }
     }
 
     //Nike text present
@@ -163,12 +183,9 @@ public class Dashboard extends TestBase {
             String value = (itemsWithInPriceRange.get(i).getText());
             value = value.replace("£", "");
             all_elements_text.add(Float.parseFloat(value));
-            //System.out.println(" float list" + all_elements_text.get(i));
-            //System.out.println("-------------" + itemsWithInPriceRange.get(i).getText());
         }
-
-        Boolean verifyIfResultTrue = inRange(all_elements_text, 5 , 10);
-        System.out.println( "verifyIfResultTrue"  + verifyIfResultTrue);
+        Boolean verifyIfResultTrue = inRange(all_elements_text, 5, 10);
+        System.out.println("verifyIfResultTrue" + verifyIfResultTrue);
         return verifyIfResultTrue;
     }
 
@@ -176,5 +193,6 @@ public class Dashboard extends TestBase {
     private static boolean inRange(List<Float> list, float min, float max) {
         return list.stream().allMatch(i -> i >= min && i <= max);
     }
+
 
 }
